@@ -3,19 +3,29 @@
         display:flex;
         flex-direction: row;
         text-align:center;
+        margin-bottom:15px;
         .btn{
             display:flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content:center;
             @include btn;
-            width:33.333333333333%;
+            width:100%;
             &>a{
                 text-decoration:none;
                 text-transform:uppercase;
+                padding-bottom:10px;
+                height:100%;
+                z-index:1;
+                width:70%;
                 &:visited{
                     text-decoration:none;
                     color:inherit;
                 }
+                &:focus{
+                    border-bottom:1px solid black;
+                }
                 &>span{
+                    z-index:0;
                     display:block;
                     text-align:center;
                     padding:15px 0;
@@ -28,20 +38,23 @@
         display:flex;
         flex-direction: row;
         text-align: center;
+        justify-content:center;
         &--header{
             display:flex;
             justify-content:center;
             &>h2{
                 width:80%;
+                font-size:1rem;
+                color:$KashmirBlue;
             }
         }
         &--paragraph{
             display:inline-flex;
             &>img{
-                width: 40%;
+                width: 50%;
             }
             &>p{
-                width:60%;
+                width:50%;
             }
         }
         [id*=tab-2]{
