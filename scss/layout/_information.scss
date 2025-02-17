@@ -1,0 +1,54 @@
+.information-wrapper{
+    .information-tabs{
+        display:flex;
+        flex-direction: row;
+        text-align:center;
+        .btn{
+            display:flex;
+            flex-direction: column;
+            @include btn;
+            width:33.333333333333%;
+            &>a{
+                text-decoration:none;
+                text-transform:uppercase;
+                &:visited{
+                    text-decoration:none;
+                    color:inherit;
+                }
+                &>span{
+                    display:block;
+                    text-align:center;
+                    padding:15px 0;
+                    font-size:2.5rem;
+                }
+            }
+        }
+    }
+    .information-content{
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        &--header{
+            display:flex;
+            justify-content:center;
+            &>h2{
+                width:80%;
+            }
+        }
+        &--paragraph{
+            display:inline-flex;
+            &>img{
+                width: 40%;
+            }
+            &>p{
+                width:60%;
+            }
+        }
+        [id*=tab-2]{
+            display:none;
+        }
+        [id*=tab-3]{
+            display:none;
+        }
+    }
+}
