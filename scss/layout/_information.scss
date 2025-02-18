@@ -1,16 +1,15 @@
 .information-wrapper{
+    overflow:hidden;
     .information-tabs{
         display:flex;
         flex-direction: row;
         text-align:center;
         margin-bottom:15px;
         .btn{
-            display:flex;
-            flex-direction: row;
-            justify-content:center;
             @include btn;
             width:100%;
             &>a{
+                display:block;
                 text-decoration:none;
                 text-transform:uppercase;
                 padding-bottom:10px;
@@ -22,7 +21,7 @@
                     color:inherit;
                 }
                 &:focus{
-                    border-bottom:1px solid black;
+                    border-bottom:2px solid $KashmirBlue;
                 }
                 &>span{
                     z-index:0;
