@@ -449,6 +449,64 @@ body {
   }
 }
 
+.navigation-wrapper {
+  overflow: hidden;
+  background-color: #52658F;
+}
+.navigation-wrapper .navigation {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-wrapper .navigation-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+  max-height: 100px;
+}
+.navigation-wrapper .navigation .logo {
+  width: 50%;
+}
+.navigation-wrapper .navigation .logo > img {
+  height: 100%;
+  width: 100%;
+}
+.navigation-wrapper .navigation-tabs {
+  display: table-cell;
+  float: left;
+}
+.navigation-wrapper .navigation-tabs > ul {
+  display: inline-flex;
+}
+.navigation-wrapper .navigation-tabs > ul > li {
+  padding: 0 15px;
+}
+.navigation-wrapper .navigation-tabs > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.navigation-wrapper .navigation-tabs > ul > li > a:focus {
+  border-bottom: 2px solid #F6882F;
+}
+.navigation-wrapper .navigation-contact {
+  display: table-cell;
+  float: right;
+  vertical-align: middle;
+  background-color: #333A56;
+  padding: 10px;
+  border-radius: 50%;
+}
+.navigation-wrapper .navigation-contact > a {
+  text-decoration: none;
+  color: #F6882F;
+}
+
+.information-wrapper {
+  overflow: hidden;
+}
 .information-wrapper .information-tabs {
   display: flex;
   flex-direction: row;
@@ -456,15 +514,13 @@ body {
   margin-bottom: 15px;
 }
 .information-wrapper .information-tabs .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 100%;
   background-color: white;
-  color: #185380;
+  color: #52658F;
   width: 100%;
 }
 .information-wrapper .information-tabs .btn > a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -477,7 +533,7 @@ body {
   color: inherit;
 }
 .information-wrapper .information-tabs .btn > a:focus {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #52658F;
 }
 .information-wrapper .information-tabs .btn > a > span {
   z-index: 0;
@@ -499,7 +555,7 @@ body {
 .information-wrapper .information-content--header > h2 {
   width: 80%;
   font-size: 1rem;
-  color: #185380;
+  color: #52658F;
 }
 .information-wrapper .information-content--paragraph {
   display: inline-flex;
