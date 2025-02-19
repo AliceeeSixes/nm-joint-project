@@ -1,9 +1,13 @@
 @mixin btn{
     //display:block;
-    height:100%;
+    //height:100%;
     //width:33.3333333%;
-    background-color: white;
-    color:$KashmirBlue;
+    display:block;
+    text-transform:uppercase;
+    font-size:1rem;
+    text-decoration:none;
+    //background-color: white;
+    //color:$KashmirBlue;
 }
 
 @mixin mq($break){
