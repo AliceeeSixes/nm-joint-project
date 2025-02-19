@@ -449,9 +449,18 @@ body {
   }
 }
 
+.btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 .navigation-wrapper {
   overflow: hidden;
   background-color: #52658F;
+  position: relative;
+  z-index: 2;
 }
 .navigation-wrapper .navigation {
   display: inline-flex;
@@ -504,8 +513,51 @@ body {
   color: #F6882F;
 }
 
+.header-wrapper {
+  overflow: hidden;
+  background-image: url(../assets/images/bread.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-wrapper .header-inner {
+  display: flex;
+  height: 250px;
+  z-index: -1;
+}
+.header-wrapper .header-inner .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  height: 100%;
+}
+.header-wrapper .header-inner .header-content::after {
+  height: 260px;
+  width: 50%;
+  position: absolute;
+  top: 71.77px;
+  left: 0;
+  background-color: #F9F5E9;
+  z-index: 0;
+  content: "";
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 70%;
+  border-right: 5px solid #333953;
+  border-top: 5px solid #333953;
+  border-bottom: 5px solid #333953;
+}
+.header-wrapper .header-inner .header-content > h2, .header-wrapper .header-inner .header-content > p, .header-wrapper .header-inner .header-content > a {
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+}
+
 .information-wrapper {
   overflow: hidden;
+  z-index: 2;
+  position: relative;
+  background-color: white;
 }
 .information-wrapper .information-tabs {
   display: flex;
@@ -515,18 +567,16 @@ body {
 }
 .information-wrapper .information-tabs .btn {
   height: 100%;
-  background-color: white;
-  color: #52658F;
   width: 100%;
+  color: #52658F;
 }
 .information-wrapper .information-tabs .btn > a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
+  display: inline-block;
   padding-bottom: 10px;
   height: 100%;
   z-index: 1;
   width: 70%;
+  text-decoration: none;
 }
 .information-wrapper .information-tabs .btn > a:visited {
   text-decoration: none;
