@@ -1,3 +1,23 @@
-@import "base/index";
-@import "layout/index";
+///==================================================
+///PARTIALS IMPORT: MODULES STYLES
+///==================================================
+@import "utilities/variables",
+        "utilities/mixins",
+        "utilities/fonts";
+
+///==================================================
+///PARTIALS IMPORT: BASE STYLES 
+///==================================================
+@import "base/reset",
+        "base/index";
+
+///==================================================
+///PARTIALS IMPORT: LAYOUT STYLES 
+///==================================================
+@import "layout/index",
+        "layout/information";
+
+///==================================================
+///PARTIALS IMPORT: MODULES STYLES
+///==================================================
 @import "modules/index";

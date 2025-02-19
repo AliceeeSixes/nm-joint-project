@@ -8,14 +8,77 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
         <title>Document</title>
     </head>
 
     <body>
-        
+        <div class="information-wrapper container">
+            <div class="information-tabs">
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-1')">
+                        <span class="fa-solid fa-bread-slice"></span>
+                        Bread Baked 
+                        <br>
+                        Daily
+                    </a>
+                </div>
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-2')">
+                        <span class="fa-solid fa-cookie-bite"></span>
+                        Handmade Sweets <br>
+                        and Pastries
+                    </a>
+                </div>
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-3')">
+                        <span class="fa-solid fa-cake-candles"></span>
+                        Specially Made 
+                        <br>
+                        for your event
+                    </a>
+                </div>
+            </div>
+            <div class="information-content">
+                <div id="tab-1" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using 
+                            <br>
+                            the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 01</p>
+                    </div>
+                </div>
+                <div id="tab-2" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 02</p>
+                    </div>
+                </div>
+                <div id="tab-3" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 03</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- JS Links -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/information-tabs.js"></script>
     </body>
 </html>
