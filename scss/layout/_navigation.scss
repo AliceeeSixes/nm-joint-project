@@ -1,6 +1,8 @@
 .navigation-wrapper{
     overflow:hidden;
     background-color:$KashmirBlue;
+    position:relative;
+    z-index:2;
     .navigation{
         &-inner{
             display:flex;
