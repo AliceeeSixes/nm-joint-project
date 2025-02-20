@@ -1,28 +1,30 @@
 .information-wrapper{
+    overflow:hidden;
+    z-index:2;
+    position:relative;
+    background-color:white;
     .information-tabs{
         display:flex;
         flex-direction: row;
         text-align:center;
         margin-bottom:15px;
         .btn{
-            display:flex;
-            flex-direction: row;
-            justify-content:center;
-            @include btn;
+            height:100%;
             width:100%;
+            color:$KashmirBlue;
             &>a{
-                text-decoration:none;
-                text-transform:uppercase;
+                display:inline-block;
                 padding-bottom:10px;
                 height:100%;
                 z-index:1;
                 width:70%;
+                text-decoration:none;
                 &:visited{
                     text-decoration:none;
                     color:inherit;
                 }
                 &:focus{
-                    border-bottom:1px solid black;
+                    border-bottom:2px solid $KashmirBlue;
                 }
                 &>span{
                     z-index:0;
