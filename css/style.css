@@ -533,10 +533,9 @@ body {
   height: 100%;
 }
 .header-wrapper .header-inner .header-content::after {
-  height: 260px;
+  height: 1000px;
   width: 50%;
   position: absolute;
-  top: 71.77px;
   left: 0;
   background-color: #F9F5E9;
   z-index: 0;
@@ -551,6 +550,9 @@ body {
   position: relative;
   z-index: 1;
   padding-left: 15px;
+}
+.header-wrapper .header-inner .header-content > a {
+  color: #52658F;
 }
 
 .information-wrapper {
@@ -577,6 +579,7 @@ body {
   z-index: 1;
   width: 70%;
   text-decoration: none;
+  color: #52658F;
 }
 .information-wrapper .information-tabs .btn > a:visited {
   text-decoration: none;

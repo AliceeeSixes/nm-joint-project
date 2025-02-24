@@ -16,10 +16,9 @@
                 width:45%;
                 height:100%;
                 &::after{
-                    height:260px;
+                    height:1000px;
                     width:50%;
                     position:absolute;
-                    top:71.77px;
                     left:0;
                     background-color:$QuarterSpanishWhite;
                     z-index:0;
@@ -36,6 +35,9 @@
                     position:relative;
                     z-index:1;
                     padding-left:15px;
+                }
+                &>a{
+                    color:$KashmirBlue;
                 }
             }
         }
