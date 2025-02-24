@@ -1,3 +1,188 @@
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #58648c;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0; }
+
+section {
+  width: 100%; }
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0; }
+
+#our-products {
+  background: #f8f4e4; }
+  #our-products h3 {
+    font-size: 1.2em; }
+
+#products-slider-container {
+  position: relative; }
+
+#products-slider {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px; }
+
+#our-products-button {
+  margin: 10px auto;
+  width: 300px;
+  height: 40px;
+  display: block;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  align-content: center;
+  cursor: pointer;
+  background: #58648c;
+  color: #f8f4e4; }
+  #our-products-button:hover {
+    background: #484f64; }
+
+.product-image-tile {
+  position: relative; }
+  .product-image-tile h3 {
+    color: #484f64;
+    padding: 20px 0;
+    font-size: 1.5em; }
+
+.product-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: red;
+  border: 5px solid #58648c; }
+
+#products-arrow-prev,
+#products-arrow-next {
+  background: none;
+  font-size: 1.8em;
+  border: none;
+  position: absolute;
+  height: 300px;
+  margin: 20px 0;
+  z-index: 2;
+  cursor: pointer; }
+  #products-arrow-prev i,
+  #products-arrow-next i {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #58648c;
+    color: #f8f4e4;
+    align-content: center; }
+    #products-arrow-prev i:hover,
+    #products-arrow-next i:hover {
+      background: #484f64; }
+
+#products-arrow-prev {
+  left: 0; }
+
+#products-arrow-next {
+  right: 0; }
+
+#customer-reviews {
+  color: #58648c;
+  padding: 30px 0; }
+  #customer-reviews blockquote {
+    margin: auto;
+    text-align: center;
+    text-wrap: wrap;
+    position: relative;
+    padding: 5px 20px;
+    font-family: sans-serif;
+    font-size: 1.2em; }
+    #customer-reviews blockquote i {
+      position: absolute;
+      top: 0; }
+      #customer-reviews blockquote i:first-of-type {
+        left: 0; }
+      #customer-reviews blockquote i:nth-of-type(2) {
+        right: 0; }
+    #customer-reviews blockquote p {
+      margin: 10px; }
+  #customer-reviews cite {
+    position: relative;
+    text-decoration: none;
+    font-style: normal;
+    text-align: right;
+    float: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+    #customer-reviews cite::before {
+      content: "- "; }
+  #customer-reviews .tagline {
+    margin: 20px 0; }
+
+#quote-carousel-dots {
+  width: 300px;
+  margin: 0 auto 50px; }
+  #quote-carousel-dots ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0; }
+  #quote-carousel-dots li {
+    padding: 10px; }
+    #quote-carousel-dots li button {
+      background: #a7b2c6;
+      border: none;
+      border-radius: 50%;
+      font-size: .1em;
+      color: transparent;
+      display: block;
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      cursor: pointer; }
+      #quote-carousel-dots li button:hover {
+        background: #58648c; }
+  #quote-carousel-dots li.slick-active button {
+    background: #58648c; }
+
+#customer-reviews-button {
+  margin: 10px auto;
+  width: 300px;
+  height: 40px;
+  display: block;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  align-content: center;
+  cursor: pointer;
+  background: #f88c2c;
+  color: white; }
+  #customer-reviews-button:hover {
+    background: #e97208; }
+
+/*# sourceMappingURL=style.css.map */
+=======
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -625,3 +810,4 @@ body {
 .information-wrapper .information-content [id*=tab-3] {
   display: none;
 }/*# sourceMappingURL=style.css.map */
+
