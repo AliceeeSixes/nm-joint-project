@@ -1,0 +1,18 @@
+@mixin buttons {
+        // Position/sizing
+        margin: 10px auto;
+        width: 300px;
+        height: 40px;
+        display: block;
+
+        // Colours/style
+        border-radius: 20px;
+        text-transform: uppercase;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: $primary-font-stack;
+        align-content: center;
+        cursor: pointer;
+}

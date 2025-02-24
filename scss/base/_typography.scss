@@ -1,0 +1,13 @@
+// Styles relating to text
+
+$primary-font-stack : sans-serif;
+
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue;
+    font-family: $primary-font-stack;
+    letter-spacing: 1px;
+    margin: 0;
+}
