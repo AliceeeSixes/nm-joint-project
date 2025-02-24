@@ -1,0 +1,46 @@
+.header-wrapper{
+    overflow:hidden;
+    background-image: url(../assets/images/bread.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    .header{
+        &-inner{
+            display:flex;
+            height:250px;
+            z-index:-1;
+            .header-content{
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                text-align: center;
+                width:45%;
+                height:100%;
+                &::after{
+                    height:260px;
+                    width:50%;
+                    position:absolute;
+                    top:71.77px;
+                    left:0;
+                    background-color:$QuarterSpanishWhite;
+                    z-index:0;
+                    content:'';
+                    border-top-right-radius: 70%;
+                    border-bottom-right-radius: 70%;
+                    border-right:5px solid $Martinique;
+                    border-top: 5px solid $Martinique;
+                    border-bottom: 5px solid $Martinique;
+                }
+                &>h2,
+                &>p,
+                &>a{
+                    position:relative;
+                    z-index:1;
+                    padding-left:15px;
+                }
+            }
+        }
+        // &-image{
+
+        // }
+    }
+}

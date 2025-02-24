@@ -1,0 +1,32 @@
+@mixin btn{
+    //display:block;
+    //height:100%;
+    //width:33.3333333%;
+    display:block;
+    text-transform:uppercase;
+    font-size:1rem;
+    text-decoration:none;
+    //background-color: white;
+    //color:$KashmirBlue;
+}
+
+@mixin mq($break){
+    $value:map-get($breakpoints, $break);
+    $s:map-get($breakpoints, 's');
+
+    @if $value == null{
+        @error "`#{$break}` is not a valid breakpoint name.";
+    }
+
+    @else if $value < $s{
+        @media (max-width: $value){
+          @content;
+        }
+      }
+
+      @else {
+        @media (min-width: $value){
+          @content;
+        }
+    }
+}

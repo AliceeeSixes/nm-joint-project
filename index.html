@@ -14,11 +14,137 @@
         <link rel="stylesheet" href="css/style.css" />
 
 
+
         <title>Baker's Dozen</title>
+=======
+        <title>Document</title>
+
     </head>
 
     <body>
-        
+
+        <div class="navigation-wrapper">
+            <div class="navigation-inner container">
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="assets/images/Logo.png">
+                    </div>
+                    <div class="navigation-tabs">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Testemonials
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Orders
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navigation-contact">
+                        <a href="#">
+                            <span class="fa-solid fa-phone fa-flip-horizontal"></span>
+                        </a>
+                    </div> 
+               </div>
+            </div>
+        </div>
+
+        <div class="header-wrapper">
+            <div class="header-inner container">
+                <div class="header-content">
+                    <h2>
+                        Header Title
+                    </h2>
+                    <p>
+                        Header Paragraph
+                    </p>
+                    <a href="#" class="btn btn-header">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+            <div class="header-image">
+
+            </div>
+        </div>
+
+        <div class="information-wrapper container">
+            <div class="information-tabs">
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-1')">
+                        <span class="fa-solid fa-bread-slice"></span>
+                        Bread Baked 
+                        <br>
+                        Daily
+                    </a>
+                </div>
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-2')">
+                        <span class="fa-solid fa-cookie-bite"></span>
+                        Handmade Sweets <br>
+                        and Pastries
+                    </a>
+                </div>
+                <div class="btn btn-information">
+                    <a href="#" onClick="openTab('tab-3')">
+                        <span class="fa-solid fa-cake-candles"></span>
+                        Specially Made 
+                        <br>
+                        for your event
+                    </a>
+                </div>
+            </div>
+            <div class="information-content">
+                <div id="tab-1" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using 
+                            <br>
+                            the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 01</p>
+                    </div>
+                </div>
+                <div id="tab-2" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 02</p>
+                    </div>
+                </div>
+                <div id="tab-3" class="information-content--block">
+                    <div class="information-content--header">
+                        <h2>
+                            Established in 2011, Our Bread is hand-crafted using the finest local ingredients
+                        </h2>
+                    </div>
+                    <div class="information-content--paragraph">
+                        <img src="assets/images/placeholder.png">
+                        <p>This is an example paragraph 03</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Our Products Section -->
         <section id="our-products">
@@ -99,9 +225,13 @@
 
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
         <!-- slick carousel -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- application.js-->
         <script src="js/application.js"></script>
+=======
+        <script src="js/information-tabs.js"></script>
+
     </body>
 </html>
