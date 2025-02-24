@@ -1,6 +1,5 @@
 #our-products {
     background: $beige;
-    padding: 20px 0;
     h3 {
         font-size: 1.2em;
     }
@@ -20,28 +19,19 @@
 
 
 #our-products-button {
-    // Position/sizing
-    margin: auto;
-    width: 300px;
-    height: 40px;
-    display: block;
+    @include buttons;
 
-    // Colours/style
-    border-radius: 20px;
+    //Colours/style
     background: $blue;
     color: $beige;
-    text-transform: uppercase;
-    font-family: $primary-font-stack;
-    align-content: center;
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
+
+    &:hover {
+        background: $dark-blue;
+    }
 }
 
 .product-image-tile {
-    width: fit-content;
+    position: relative;
     h3 {
         color: $dark-blue;
         padding: 20px 0;
@@ -65,7 +55,8 @@
     font-size: 1.8em;
     border: none;
     position: absolute;
-    height: 100%;
+    height: 300px;
+    margin: 20px 0;
     i {
         border-radius: 50%;
         height: 50px;
@@ -73,9 +64,13 @@
         background: $blue;
         color: $beige;
         align-content: center;
+        &:hover {
+            background: $dark-blue;
+        }
     }
     z-index: 2;
     cursor: pointer;
+
 }
 #products-arrow-prev {
     left: 0;

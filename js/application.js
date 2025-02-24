@@ -12,3 +12,11 @@ $("#products-slider").slick({
     infinite: true,
     slidesToShow: 3
 });
+
+$("#quote-carousel").slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    appendDots: "#quote-carousel-dots",
+});
