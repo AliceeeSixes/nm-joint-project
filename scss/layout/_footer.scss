@@ -1,0 +1,33 @@
+footer {
+    padding: 20px 0;
+
+    background: $blue;
+    h3,
+    p,
+    a {
+        text-align: left;
+        color: white;
+    }
+
+    
+}
+
+.footer-grid {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+}
+
+.footer-copyright {
+    color: white;
+    margin: auto;
+    width: fit-content;
+    font-size: .9em;
+}

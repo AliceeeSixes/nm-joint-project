@@ -3,27 +3,27 @@
 @import "colours";
 @import "typography";
 @import "base";
-=======
+
 body{
     font-family:"Atkinson Hyperlegible Next", sans-serif;
 }
-.container{
-    margin-right:auto;
-    margin-left:auto;
-    padding-left:15px;
-    padding-right:15px;
-    // @include mq('s'){
-    //     width:700px;
-    // }
-    @include mq('s'){
-        width:700px;
-    }
-    @include mq('m'){
-        width:900px;
-    }
-    @include mq('l'){
-        width:1200px;
-    }
-}
+// .container{
+//     margin-right:auto;
+//     margin-left:auto;
+//     padding-left:15px;
+//     padding-right:15px;
+//     // @include mq('s'){
+//     //     width:700px;
+//     // }
+//     @include mq('s'){
+//         width:700px;
+//     }
+//     @include mq('m'){
+//         width:900px;
+//     }
+//     @include mq('l'){
+//         width:1200px;
+//     }
+// }
 
 
