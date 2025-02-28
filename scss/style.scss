@@ -1,8 +1,3 @@
-
-@import "base/index";
-@import "modules/index";
-@import "layout/index";
-=======
 ///==================================================
 ///PARTIALS IMPORT: MODULES STYLES
 ///==================================================
@@ -13,20 +8,18 @@
 ///==================================================
 ///PARTIALS IMPORT: BASE STYLES 
 ///==================================================
-@import "base/reset",
-        "base/index";
-
-///==================================================
-///PARTIALS IMPORT: LAYOUT STYLES 
-///==================================================
-@import "layout/index",
-        "layout/buttons",
-        "layout/navigation",
-        "layout/header",
-        "layout/information";
+@import "base/index";
 
 ///==================================================
 ///PARTIALS IMPORT: MODULES STYLES
 ///==================================================
 @import "modules/index";
+
+///==================================================
+///PARTIALS IMPORT: LAYOUT STYLES 
+///==================================================
+@import "layout/index";
+
+
+
 

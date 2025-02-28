@@ -22,18 +22,18 @@
     @include buttons;
 
     //Colours/style
-    background: $blue;
+    background: $KashmirBlue;
     color: $beige;
 
     &:hover {
-        background: $dark-blue;
+        background: $PickledBluewood;
     }
 }
 
 .product-image-tile {
     position: relative;
     h3 {
-        color: $dark-blue;
+        color: $PickledBluewood;
         padding: 20px 0;
         font-size: 1.5em;
     }
@@ -45,7 +45,7 @@
     height: 300px;
     margin: auto;
     background: red;
-    border: 5px solid $blue;
+    border: 5px solid $KashmirBlue;
 }
 
 
@@ -61,11 +61,11 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        background: $blue;
+        background: $KashmirBlue;
         color: $beige;
         align-content: center;
         &:hover {
-            background: $dark-blue;
+            background: $PickledBluewood;
         }
     }
     z-index: 2;

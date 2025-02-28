@@ -1,5 +1,5 @@
 #customer-reviews {
-    color: $blue;
+    color: $KashmirBlue;
     padding: 30px 0;
 
 
@@ -74,13 +74,13 @@
             padding: 0;
             cursor: pointer;
             &:hover {
-                background: $blue;
+                background: $KashmirBlue;
             }
         }
     }
     li.slick-active {
         button {
-            background: $blue;
+            background: $KashmirBlue;
         }
     }
 }
